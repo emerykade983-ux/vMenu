@@ -278,7 +278,8 @@ namespace vMenuClient
             if (MainMenu.PlayerOptionsMenu.PlayerSuperJump && IsAllowed(Permission.POSuperjump))
             {
                 SetSuperJumpThisFrame(Game.Player.Handle);
-            }
+            } mainButtons[i].OnClick();
+
 
             // Manage PlayerNoRagdoll
             SetPedCanRagdoll(Game.PlayerPed.Handle, (!MainMenu.PlayerOptionsMenu.PlayerNoRagdoll && noRagdollAllowed) ||
